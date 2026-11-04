@@ -14,7 +14,7 @@
 
    | Parameter | Default | Notes |
    |---|---|---|
-   | App instance name | none | Used as the name of all resources. |
+   | App instance name | none | Name of the Application, Deployment, and Service. ConfigMaps use it as a prefix (`NAME-page-config`, `NAME-ubbagent`). |
    | Namespace | none | Target namespace. |
    | Replicas | `1` | Number of web pods. Minimum 1. |
    | Tenant name | `demo-tenant` | Shown in the page header. |
