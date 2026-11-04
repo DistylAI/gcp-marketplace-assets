@@ -41,5 +41,12 @@ kubectl port-forward -n NAMESPACE svc/NAME 8080:80
 
 Then browse to http://localhost:8080.
 
-For external access, add an Ingress or a `LoadBalancer` Service that
-targets `svc/NAME` port 80.
+For external access, either:
+
+- Change the Service to type `LoadBalancer`:
+  ```sh
+  kubectl patch svc NAME -n NAMESPACE -p '{"spec":{"type":"LoadBalancer"}}'
+  ```
+- Or create an Ingress with backend Service `NAME`, port `80`. This
+  requires an Ingress controller in the cluster (GKE includes one by
+  default).
