@@ -21,8 +21,8 @@ Include:
   kubectl get all,application,configmap -n NAMESPACE
   kubectl describe application NAME -n NAMESPACE
   kubectl describe pods -n NAMESPACE
-  kubectl logs deploy/NAME -c web -n NAMESPACE
-  kubectl logs deploy/NAME -c ubbagent -n NAMESPACE
+  kubectl logs -l app.kubernetes.io/name=NAME -c web -n NAMESPACE --prefix --tail=-1
+  kubectl logs -l app.kubernetes.io/name=NAME -c ubbagent -n NAMESPACE --prefix --tail=-1
   ```
 
 Support: https://distyl.ai
