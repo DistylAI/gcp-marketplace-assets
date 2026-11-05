@@ -1,11 +1,10 @@
-# Distillery for GKE: Support Docs
+# Distillery: Support Docs
 
-Distillery (Context Mesh landing page) for Google Kubernetes Engine,
-installed from Google Cloud Marketplace.
+Distillery is available on Google Cloud Marketplace in two forms:
 
-- [Installation](installation.md)
-- [Configuration](configuration.md)
-- [Troubleshooting](troubleshooting.md)
-- [Uninstall](uninstall.md)
+- [Distillery for GKE](gke/README.md): Kubernetes app installed into your
+  GKE cluster.
+- [Distillery SaaS](saas/README.md): hosted service. Reach out to your
+  Distyl partner for pricing and further details.
 
 Support: https://distyl.ai
